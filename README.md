@@ -1,2 +1,8 @@
  This is a pokemon type effectiveness simulator. There are a lot of different type combos in pokemon so it is hard for beginners to know what moves
- to use in pokemon. Our simulator will help the user input the desired pokemon type and find what is super effective against it. 
+ to use in pokemon. Our simulator will help the user input the desired pokemon type and find what is super effective against it.
+
+How we plan on creating this project:
+- We would create an interface similar to the one created by vineel in scenes so the user could input the types of the pokemon that he is facing and get results about how the pokemon is affected by certain types of moves
+- We then would create a class that is called Type to store the functions that will interact between types and one of the attributes of that class will be an enumeration of all of the types a pokemon can be so that we will know what type each type class is.
+- Then we can assign a number value between each type attacking one another for example, a grass type attacking a water and ground type would yield a number value of 4 saying that it is 4x effective because grass is 2x effective versus water and 2x effective versus ground so we would multiply these two numbers together to get the overall effectiveness. Another example of this is a grass type attacking a water and fire type. Since grass is .5x effective versus fire and 2x effective versus water we multiply those numbers together to get 1x effectiveness which means the attack hits neutral.
+- To figure out the effectiveness of each type we will use a type chart from the 8th generation of pokemon since sometimes the type effectiveness changes in between pokemon generations.
